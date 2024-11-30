@@ -1,38 +1,257 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.about_text {
+  text-align: justify;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-family: "Prompt", sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.menu {
+  padding: 2px 45px;
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+}
+
+.top {
+  border-bottom: 1px solid rgb(209, 208, 208);
+}
+
+.banner_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+
+.slides_container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.slide {
+  min-height: 80vh;
+  width: 100%;
+}
+
+.arrow_container {
+  display: flex;
+  justify-content: end;
+}
+
+.arrow {
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.chapter {
+  text-transform: uppercase;
+  font-family: "Jost", sans-serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  line-height: 43px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.slogan, .show_description {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.show_description {
+  text-align: justify;
+}
+
+.wardrobe {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
+.wardrobe_main {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.wardrobe_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.garment {
+  width: 100%;
+}
+
+.wardrobe_container_one {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.show_hide {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  text-align: justify;
+}
+
+.removeBtn {
+  font-family: "Playfair Display", serif;
+  background: transparent;
+  border: 1px solid rgb(77, 76, 76);
+  padding: 5px 20px;
+  border-radius: 2px;
+  font-size: 18px;
+}
+
+.removeBtn:hover {
+  cursor: pointer;
+  background: black;
   color: white;
+  transition-duration: 1.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.source {
+  display: flex;
+  justify-content: flex-end;
+  font-family:  "Jost", sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width: 800px) {
+
+  .app {
+    width: 98%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top {
+    flex-wrap: wrap;
+  }
+
+  .menu {
+    margin: 0;
+    padding: 2px 10px;
+  }
+
+  .about {
+    margin: 0 20px;
+  }
+
+  .about_text, h2 {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .banner_container {
+    margin-top: 15px;
+  }
+
+  .slide {
+    min-height: 40vh;
+  }
+
+  .garment {
+    max-height: 50vh;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  .show_description, .show_hide, .removeBtn {
+    font-size: 16px;
+  }
+
+  .wardrobe_main {
+    margin-bottom: 0;
+  }
+
+  .removeBtn {
+    padding: 3px 10px;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  .banner_container {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .wardrobe_container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .header_container {
+    order: -1;
+    width: 80%;
+  }
+
+  .slides_container, .wardrobe_container_one {
+    width: 80%;
+  }
+
+.wardrobe_container_one {
+    align-items: center;
+  }
+
+  h3 {
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .garment {
+    width: auto;
   }
 }
