@@ -2,8 +2,8 @@
 
 A simple checklist application for tracking essential wardrobe items, built with React.
 
-<img src="screenshot.PNG" width="600px">
-<img src="screenshot1.PNG" width="600px">
+  <img src="./assets/screenshot.PNG" width="600px">
+  <img src="./assets/screenshot1.PNG" width="600px">
 
 ## Features
 
